@@ -19,3 +19,4 @@ helm init --service-account=tiller
 ```
 kubectl --namespace kube-system get pods | grep tiller
 ```
+To create a nice little containerised client with AZ CLI, HELM, DRAFT plus the YAML files in this repo then use the Dockerfile contained here. 
