@@ -10,15 +10,12 @@ kubectl create -f role-tiller.yaml
 kubectl create -f rolebinding-tiller.yaml
 kubectl create -f role-tiller-kube-system.yaml
 kubectl create -f rolebinding-tiller-kube-system.yaml
-
 ```
 # Configure HELM with the new Service Account
 ```
 helm init --service-account=tiller
-
 ```
 # Test Tiller installed
 ```
 kubectl --namespace kube-system get pods | grep tiller
-
 ```
